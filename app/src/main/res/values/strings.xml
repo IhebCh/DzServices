@@ -26,17 +26,16 @@
     <string name="main_7_icons">7 Icons</string>
     <string name="main_8_icons">8 Icons</string>
     <!-- Menu names -->
-    <string name="business_card">Business Card</string>
-    <string name="calendar">Calendar</string>
-    <string name="cloud">Cloud</string>
-    <string name="facebook">Facebook</string>
-    <string name="key">Key</string>
-    <string name="mail">Mail</string>
-    <string name="profile">Profile</string>
-    <string name="tag">Tag</string>
-    <string name="voice_search">Voice Search</string>
+
     <!-- Toasts -->
     <string name="start_app">Starting application:</string>
     <string name="center_click">Center has been clicked</string>
+    <string name="maintenance_info">Maintenance Informatique</string>
+    <string name="reparation_car">Réparation Véhicule</string>
+    <string name="reparation_tel">Réparation Téléphonique</string>
+    <string name="transport">Location de véhicules &amp; Transport</string>
+    <string name="education">Education &amp; écoles</string>
+    <string name="health">Santé</string>
+    <string name="home_reparation"><![CDATA[Réparation & entretien de maison]]></string>
 
 </resources>
