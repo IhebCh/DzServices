@@ -112,7 +112,7 @@ public class CircleLayout extends ViewGroup {
 
         gestureDetector = new GestureDetector(getContext(),
                 new MyGestureListener());
-        quadrantTouched = new boolean[]{false, false, false, false, false};
+        quadrantTouched = new boolean[] { false, false, false, false, false };
 
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs,
@@ -155,6 +155,15 @@ public class CircleLayout extends ViewGroup {
         }
     }
 
+
+    public float getAngle() {
+        return angle;
+    }
+
+    public void setAngle(float angle) {
+        this.angle = angle % 360;
+        setChildAngles();
+    }
 
     /**
      * Returns the currently selected menu
@@ -298,7 +307,7 @@ public class CircleLayout extends ViewGroup {
     private void rotateViewToCenter(CircleImageView view) {
         Log.v(VIEW_LOG_TAG, "rotateViewToCenter");
         if (isRotating && !objectsHidden && !allAnimationSet.isRunning()) {
-            float destAngle =  (firstChildPos - view.getAngle());
+            float destAngle = (float) (firstChildPos - view.getAngle());
 
             if (destAngle < 0) {
                 destAngle += 360;
@@ -705,8 +714,8 @@ public class CircleLayout extends ViewGroup {
                         MainActivity.ma.animateCenterShownStop();
                     }
                     else {
-                       // MainActivity.l.setBackgroundDrawable( getResources().getDrawable(R.drawable.back_moon_hidden));
-                        MainActivity.ma.animateCenterHiddenStop();
+                     //   MainActivity.l.setBackgroundDrawable( getResources().getDrawable(R.drawable.back_moon_hidden));
+                      MainActivity.ma.animateCenterHiddenStop();
                         MainActivity.ma.animateCenterShownPlay();
                     }
                 }

@@ -43,7 +43,7 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
         selectedTextView.setText(((CircleImageView) circleMenu
                 .getSelectedItem()).getName());
 
-        l = (LinearLayout) findViewById(R.id.center);
+       l = (LinearLayout) findViewById(R.id.center);
 
         animateCenterHiddenCreate();
         animateCenterShownCreate();
@@ -142,7 +142,7 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
 
     }
 
-    public void animateCenterHiddenCreate() {
+  public void animateCenterHiddenCreate() {
         animHidden = new AnimationDrawable();
 
         //Bitmap bm = decodeSampledBitmapFromUri();
@@ -180,48 +180,6 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
         animHidden.addFrame(  new BitmapDrawable(getResources(), BitmapFactory
                 .decodeResource(getResources(),R.drawable.back_moon11, options)), 40);
 
-/*
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon0),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon1),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon2),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon3),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon4),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon5),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon6),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon7),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon8),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon9),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon10),
-                40);
-        animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon11),
-                40);*/
-
-  /*      animHidden.addFrame(
-                getResources().getDrawable(R.drawable.back_moon12),
-                40);
-*/
 
         //if you want the animation to loop, set false
         animHidden.setOneShot(false);
@@ -239,7 +197,7 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
 
     }
 
-    public void animateCenterShownCreate() {
+  public void animateCenterShownCreate() {
 
         animShown = new AnimationDrawable();
 
@@ -250,14 +208,7 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
                 .decodeResource(getResources(),R.drawable.back_moon_hidden0, options)), 600);
         animShown.addFrame(  new BitmapDrawable(getResources(), BitmapFactory
                 .decodeResource(getResources(),R.drawable.back_moon_hidden1, options)), 600);
-/*
-        animShown.addFrame(
-                getResources().getDrawable(R.drawable.back_moon_hidden0),
-                600);
-        animShown.addFrame(
-                getResources().getDrawable(R.drawable.back_moon_hidden1),
-                600);
-*/
+
         //if you want the animation to loop, set false
         animShown.setOneShot(false);
 

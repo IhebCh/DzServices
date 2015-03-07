@@ -33,9 +33,9 @@
     <string name="maintenance_info">Maintenance Informatique</string>
     <string name="reparation_car">Réparation Véhicule</string>
     <string name="reparation_tel">Réparation Téléphonique</string>
-    <string name="transport">Location de véhicules &amp; Transport</string>
-    <string name="education">Education &amp; écoles</string>
+    <string name="transport">Location de véhicules et Transport</string>
+    <string name="education">Education et écoles</string>
     <string name="health">Santé</string>
-    <string name="home_reparation"><![CDATA[Réparation & entretien de maison]]></string>
+    <string name="home_reparation">Réparation et entretien de maison</string>
 
 </resources>
