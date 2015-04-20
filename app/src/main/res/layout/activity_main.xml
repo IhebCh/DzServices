@@ -27,7 +27,7 @@
             android:layout_height="0dp"
             android:layout_above="@+id/main_selected_textView"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="88">
+            android:layout_weight="86">
 
             <include layout="@layout/menu_items" />
 
@@ -52,9 +52,10 @@
             android:layout_height="0dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-
-            android:layout_weight="12"
-
+            android:layout_weight="9"
+            android:gravity="center|top"
+            android:textColor="#F0FFFFFF"
+android:textSize="36sp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>

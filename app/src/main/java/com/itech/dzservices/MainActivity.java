@@ -3,6 +3,7 @@ package com.itech.dzservices;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -39,7 +40,10 @@ public class MainActivity extends Activity implements CircleLayout.OnItemSelecte
         circleMenu.setOnRotationFinishedListener(this);
         circleMenu.setOnCenterClickListener(this);
 
+        Typeface type = Typeface.createFromAsset(getAssets(),
+                "fonts/roboto_light.ttf");
         selectedTextView = (TextView) findViewById(R.id.main_selected_textView);
+        selectedTextView.setTypeface(type);
         selectedTextView.setText(((CircleImageView) circleMenu
                 .getSelectedItem()).getName());
 
